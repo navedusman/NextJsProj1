@@ -1,0 +1,11 @@
+* To create App
+     npx create-next-app@latest
+* npm run dev
+* create folder in src -> model and define all model fro database
+* install mongoose     -> npm i mongoose
+* regex for email id validation
+    '/.+\@.+\..+/'
+* create folder in src -> schemas and define validation for different forms
+* install zod for validations -> npm install zod
+
+
