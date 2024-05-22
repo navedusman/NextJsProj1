@@ -7,5 +7,7 @@
     '/.+\@.+\..+/'
 * create folder in src -> schemas and define validation for different forms
 * install zod for validations -> npm install zod
+* database connection
+* make lib folder and make dbConnect.ts file in it
 
 
