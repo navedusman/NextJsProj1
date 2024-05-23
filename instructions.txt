@@ -12,5 +12,6 @@
 * install resend 
 * npm install @react-email/components -E
 * npm i bcryptjs
+* npm install next-auth
 
 
