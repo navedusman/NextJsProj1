@@ -9,5 +9,8 @@
 * install zod for validations -> npm install zod
 * database connection
 * make lib folder and make dbConnect.ts file in it
+* install resend 
+* npm install @react-email/components -E
+* npm i bcryptjs
 
 
