@@ -19,11 +19,11 @@ export async function GET(request: Request) {
      const result = UsernameQuerySchema.safeParse(queryParam) 
     console.log(result) // todo remove
     if (!result.success){
-        const userNameErrors =result.error.format().username?._errors || []
+        const userNameErrors = result.error.format().username?._errors || []
         return Response.json(
             {
               success: false,
-              message: 'Invalid query parameters',
+              message: userNameErrors || 'Invalid Query parameters' ,
             },
             { status: 400 }
           );
@@ -46,10 +46,7 @@ export async function GET(request: Request) {
         },
         { status: 200 }
       );
-
-    
-
-        
+   
     } catch (error) {
         console.error("Error Checking Username", error)
         return Response.json(
